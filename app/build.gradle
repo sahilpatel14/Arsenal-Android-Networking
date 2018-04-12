@@ -29,6 +29,11 @@ dependencies {
 
     implementation "org.jetbrains.anko:anko-commons:0.10.4"
 
+    //  Volley dependency
+    implementation 'com.android.volley:volley:1.1.0'
+
+    implementation 'com.google.code.gson:gson:2.8.2'
+
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
