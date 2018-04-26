@@ -3,22 +3,14 @@ package com.ninthsemester.arsenalandroidnetworking
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import com.ninthsemester.arsenalandroidnetworking.api.ConnectionDetector
-import com.ninthsemester.arsenalandroidnetworking.volley.VolleyNetworkApi
-import com.ninthsemester.arsenalandroidnetworking.volley.core.VolleyRequestQueue
 import kotlinx.android.synthetic.main.activity_main.*
 import org.jetbrains.anko.AnkoLogger
 
 class MainActivity : AppCompatActivity(), AnkoLogger{
 
     private val baseUrl by lazy { getString(R.string.base_url) }
-    private val api by lazy {
-        VolleyNetworkApi(
-                VolleyRequestQueue.getInstance(this),
-                baseUrl,
-                headers = hashMapOf(Pair("token","fdsfdsfsd")),
-                connectionDetector = ConnectionDetector.getInstance(this)
-        )
-    }
+
+
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,9 +22,6 @@ class MainActivity : AppCompatActivity(), AnkoLogger{
 
 
     private fun registerUser() {
-
-
-        api.getAllUsers({},{})
 
 //        val dob = HashMap<String, String>()
 //
