@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    tools:context="com.ninthsemester.arsenalandroidnetworking.login.LoginActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:elevation="5dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/rounded_white_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:inputType="textEmailAddress"
+            android:imeOptions="actionNext"
+            android:lines="1"
+            android:padding="15dp"
+            android:background="@drawable/et_rounded_white_background"
+            android:layout_width="0dp"
+            android:hint="fdsdfsd"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <Button
+            android:elevation="5dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/btn_rounded_blue_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="98dp"
+            android:layout_marginStart="98dp"
+            android:layout_marginTop="8dp"
+            android:text="Login"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.74" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+
+
+</android.support.constraint.ConstraintLayout>
